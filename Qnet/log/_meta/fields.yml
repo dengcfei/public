@@ -1,0 +1,25 @@
+- name: log
+  description: Please add description
+  example: Please add example
+  type: group
+  fields:
+  - name: date
+    description: Please add description
+    example: Please add example
+  - name: time
+    description: Please add description
+    example: Please add example
+  - name: threadid
+    description: Please add description
+    example: Please add example
+  - name: type
+    description: Please add description
+    example: Please add example
+  - name: loglevel
+    description: Please add description
+    example: Please add example
+    type: keyword
+  - name: classname
+    description: Please add description
+    example: Please add example
+    type: keyword

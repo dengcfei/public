@@ -1,0 +1,20 @@
+{
+  "description": "Pipeline for parsing Qnet log logs",
+  "processors": [
+		{
+		  "grok": {
+			"field": "message",
+			"patterns":[
+			  "^| %{DATE:Qnet.log.date} %{TIME:Qnet.log.time} QNet %{THREADID:Qnet.log.threadid} | %{TYPE:Qnet.log.type} %{LOGLEVEL:Qnet.log.loglevel} %{WORD:Qnet.log.classname} %{}"
+			  ],
+			"ignore_missing": true
+		  }
+		}  
+    ],
+  "on_failure" : [{
+    "set" : {
+      "field" : "error.message",
+      "value" : "{{ _ingest.on_failure_message }}"
+    }
+  }]
+}

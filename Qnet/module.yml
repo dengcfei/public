@@ -1,0 +1,3 @@
+dashboards:
+- id: Filebeat-Qnet-log-Dashboard
+  file: Filebeat-Qnet-log.json

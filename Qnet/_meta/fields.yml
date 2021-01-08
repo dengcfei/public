@@ -1,0 +1,9 @@
+- key: Qnet
+  title: "Qnet"
+  description: >
+    Qnet Module
+  fields:
+    - name: Qnet
+      type: group
+      description: >
+      fields:
